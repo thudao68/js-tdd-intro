@@ -7,10 +7,10 @@ const assert = require('assert');
 assert.strictEqual(typeof capitalizeFirstLetters, 'function');
 
 // Check that capitalizeFirstletters transforms 'i am learning TDD' correctly
-assert.strictEqual(capitalizeFirst('i am learning TDD'), 'I Am Learning TDD');
+assert.strictEqual(capitalizeFirstLetters('i am learning TDD'), 'I Am Learning TDD');
 
 // Check that it works for a 1-character string
-assert.strictEqual(capitalizeFirst('z'), 'Z');
+assert.strictEqual(capitalizeFirstLetters('z'), 'Z');
 
 // Check that it works for an empty string
-assert.strictEqual(capitalizeFirst(''), '');
+assert.strictEqual(capitalizeFirstLetters(''), '');
