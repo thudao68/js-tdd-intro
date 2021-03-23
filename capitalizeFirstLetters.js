@@ -18,14 +18,13 @@ assert.strictEqual(capitalizeFirstLetters(''), '');
 
 function capitalizeFirstLetters(input) {
   let words = input.split(" ");
-  for (let i = 0 ; i < words.length ; i++) {
-    if (words.length > 0){
+ if (input.length == 0){
+  return input;
+ } else {
+    for (let i = 0 ; i < words.length ; i++) {
       words[i] = words[i][0].toUpperCase() + words[i].substr(1);
-    } else {
-      '';
     }
-  }
+ }
   return words.join(" ");
 }
-
    
