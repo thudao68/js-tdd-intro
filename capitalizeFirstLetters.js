@@ -12,3 +12,17 @@ assert.strictEqual(capitalizeFirstLetters('z'), 'Z');
 
 // Check that it works for an empty string
 assert.strictEqual(capitalizeFirstLetters(''), '');
+
+
+// Code
+let words = input.split(" ");
+function capitalizeFirstLetters(input) {
+  for (let i = 0 ; i < words.length ; i++) {
+    if (words.length > 0){
+      words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+    } else {
+      '';
+    }
+}
+words.join(" ");
+   
